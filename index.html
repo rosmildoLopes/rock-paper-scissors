@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="score">
-    <h1>Rounds :0</h1>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="score">
+      <h1>Rounds :0</h1>
+    </div>
 
-  <div class="winnerSection">
-    <h2 class="winner">Here is the winner phrase</h2>
-    <button>Play Again</button>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <div class="winnerSection">
+      <h2 class="winner">Here is the winner phrase</h2>
+      <button onclick="resetGame()" class="reset">Play Again</button>
+    </div>
+    <div class="playerSection">
+      <h3 class="playerChoice">You chose :</h3>
+      <h3 class="playerScore">Score :0</h3>
+      <div class="playerImages">
+        <img src="./images/rock.png" alt="rock" class="pImg" id="rock">
+        <img src="./images/paper.png" alt="paper" class="pImg" id="paper">
+        <img src="./images/scissors.png" alt="scissors" class="pImg" id="scissors">
+      </div>
+    </div>
+
+    <div class="computerSection">
+      <h3 class="computerChoice">You chose :</h3>
+      <h3 class="computerScore">Score :0</h3>
+      <div class="computerImages">
+        <img src="./images/rock.png" alt="rock" class="rock">
+        <img src="./images/paper.png" alt="paper" class="paper">
+        <img src="./images/scissors.png" alt="scissors" class="scissors">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
